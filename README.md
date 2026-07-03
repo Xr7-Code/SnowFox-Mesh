@@ -1,30 +1,29 @@
 # 🦊 SnowFox Mesh
 
-SnowFox Mesh ist ein dezentrales, autarkes Kommunikationsprotokoll. Ich entwickle dieses System als Antwort auf die zunehmende Fragilität zentralisierter Infrastrukturen. Das Ziel ist die Schaffung eines Netzwerks, das auch dann funktioniert, wenn staatliche oder kommerzielle Systeme (ISP-Gateways, Stromnetz) ausfallen.
+SnowFox Mesh ist ein dezentrales, autarkes Kommunikationsprotokoll. Ich entwickle dieses System als direkte Antwort auf die zunehmende Fragilität zentralisierter Infrastrukturen und als technisches Instrument zur Sicherung der digitalen Souveränität.
 
-## 📋 Motivation & Philosophie
-Ich arbeite alleine an diesem Projekt, um maximale Unabhängigkeit zu wahren. Ich bin nicht an Firmeninteressen oder regulatorische Vorgaben gebunden, was mir erlaubt, die Stabilität und Sicherheit der Bevölkerung als höchste Priorität zu definieren.
+## 🏛 Gesellschaftspolitische Einordnung
 
-*   **Autonomie:** Ich lehne die Abhängigkeit von zentralen „Single Points of Failure“ ab.
-*   **Reaktion auf Infrastruktur-Schwächen:** Ich sehe eine Fehlentwicklung in der aktuellen Priorisierung von Ressourcen. Mein Fokus liegt auf einer funktionalen, krisenfesten Basis-Infrastruktur.
-*   **Umgang mit Restriktionen:** Ich bin mir bewusst, dass ein solches Tool auf Widerstand stoßen könnte. Ein kritischer Diskurs über digitale Souveränität ist ein inhärenter Teil dieses Projekts. Mein Ziel ist nicht die Konfrontation, sondern die Schaffung einer technischen Alternative, die im Ernstfall die Kommunikation sichert.
+Ich beobachte eine kritische Entwicklung: Die Abhängigkeit von zentralen, staatlich oder kommerziell kontrollierten Infrastrukturen führt zu einer systemischen Schwachstelle. Wenn Kommunikation ausschließlich über Masten, Rechenzentren und Internet-Provider läuft, verliert der Bürger seine Handlungsfähigkeit bei deren Ausfall.
+
+*   **Systemische Verwundbarkeit:** Aktuelle Behördensysteme folgen der Logik: „Das Nötigste reicht“. Ich halte dies für ein Versagen, da Sicherheit in Krisenzeiten keine ökonomische Abwägung sein darf, sondern eine garantierte Funktionalität erfordert.
+*   **Widerstand als Legitimation:** Die Autonomie meines Systems ist bewusst gewählt. Wenn Firmen oder staatliche Akteure ein solches Tool einschränken oder verbieten wollen, sehe ich dies als Bestätigung seiner Relevanz. Jedes Verbot ist der Beweis, dass das System die monopolartige Kontrolle über die Infrastruktur untergräbt und den Menschen die Unabhängigkeit zurückgibt.
+*   **Freiheit durch Dezentralität:** Mein Ziel ist es, die Macht über die Kommunikation von zentralen Instanzen zurück in die Hände der Bevölkerung zu legen. Es ist ein Projekt für eine Gesellschaft, die sich auf den Fall vorbereiten will, in dem offizielle Systeme aufgrund politischer Fehlpriorisierungen oder technischer Überlastung versagen.
 
 ## 🛠 Technische Spezifikation
 
 ### Architektur-Konzept
-SnowFox Mesh nutzt ein Peer-to-Peer-Routing, um Nachrichten über mehrere Hops zu relayen. 
+SnowFox Mesh nutzt Peer-to-Peer-Routing, um Nachrichten über mehrere Hops zu relayen. 
 
-*   **Routing-Konzept:** Ich implementiere [BATMAN / OLSR-basierte] Ansätze zur dynamischen Pfadfindung.
+*   **Routing-Konzept:** Implementierung von [BATMAN / OLSR-basierten] Ansätzen zur dynamischen Pfadfindung.
 *   **Peer Discovery:** Mechanismen zur automatischen Erkennung benachbarter Knoten im Funkbereich.
-*   **NAT-Traversal:** Strategien zur Überwindung von Netzwerk-Restriktionen zwischen Endpunkten.
 *   **Gateway-Konzept:** Dedizierte Knoten fungieren als Übergangspunkte, das Protokoll ist jedoch darauf ausgelegt, auch in isolierten lokalen Meshes (Node-to-Node) zu kommunizieren.
 
 ### Kryptographie & Sicherheit
 Ich verfolge den Ansatz, die Hürden für unautorisierte Datenanalyse durch Verschlüsselung und Protokoll-Obfuskation signifikant zu erschweren.
 
 *   **E2E-Verschlüsselung:** Einsatz von [X25519 / Ed25519 / Noise Protocol Framework] zur Absicherung der Payloads.
-*   **Sicherheitsmodell:** Ich erkenne an, dass E2E-Verschlüsselung zwar Inhalte schützt, Metadaten (Verkehrsmuster, Signalquellen) jedoch durch physische Messungen oder Traffic-Analyse prinzipiell untersuchbar bleiben.
-*   **Abgrenzung:** Das System zielt darauf ab, passive Beobachtung und einfache Inhaltsanalyse zu verhindern. Ich erhebe keinen Anspruch auf Unknackbarkeit gegenüber hochspezialisierten Akteuren, sondern arbeite kontinuierlich daran, den Aufwand für potenzielle Angreifer so hoch wie möglich zu schrauben.
+*   **Sicherheitsmodell:** Ich erkenne an, dass E2E-Verschlüsselung zwar Inhalte schützt, Metadaten (Verkehrsmuster, Signalquellen) jedoch durch physische Messungen oder Traffic-Analyse untersuchbar bleiben. Das System zielt darauf ab, einfache Inhaltsanalyse zu verhindern; es gibt keine Garantie auf absolute Anonymität gegenüber hochspezialisierten Akteuren.
 
 ## 📊 Vergleich: Behörden vs. SnowFox Mesh
 
@@ -33,7 +32,6 @@ Ich verfolge den Ansatz, die Hürden für unautorisierte Datenanalyse durch Vers
 | **Infrastruktur** | Zentral (SPOF-anfällig) | Dezentral (Resilient) |
 | **Abhängigkeit** | Strom, Internet, Provider | Keine (Autark) |
 | **Priorisierung** | Politisch / Administrativ | Algorithmen (Notruf = Prio 1) |
-| **Einsatzbarkeit** | Bürokratisch gebunden | Sofort / Jederzeit |
 | **Zielvorgabe** | "Minimaler Standard" | Maximale Stabilität |
 | **Kontrolle** | Staat / Konzern | Unabhängig (Open Source) |
 
@@ -53,4 +51,4 @@ Dieses Projekt ist ein fortlaufender Lern- und Entwicklungsprozess. Ich strebe k
 *Disclaimer: SnowFox Mesh ist ein experimentelles Open-Source-Projekt. Die Nutzung erfolgt auf eigene Gefahr. Es werden keinerlei Garantien hinsichtlich Verfügbarkeit oder Sicherheit gegeben.*
 
 Dokument erstellt: 2026-07-03
-Version: 0.5 (Alpha/Entwicklung)
+Version: 0.1 (Alpha/Entwicklung)

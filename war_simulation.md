@@ -13,30 +13,26 @@ Dieses Dokument simuliert das Verhalten und die Protokolle von **SnowFoxOS** und
 
 ## 🕒 Chronologischer Ablauf: Krise, Ausfall und Gegenmaßnahmen
 
-<Timeline>
-{/* Reason: Chronologische Darstellung des Kriegs-Szenarios über 72 Stunden, bei dem die exakten Zeiten den Verlauf der technologischen Eskalation und das Gegensteuern von SnowFoxOS verdeutlichen. */}
-  <TimelineEvent title="Stunde 00:00 – Der Erstschlag (Cyberwar)" time="Tag 1 - 04:00 Uhr">
+*   **Tag 1 - 04:00 Uhr | Stunde 00:00 – Der Erstschlag (Cyberwar)**
     Ein koordinierter Angriff auf die Leitsysteme (SCADA) trennt die Region vom europäischen Verbundnetz. **Totaler Blackout.** Das kommerzielle Internet bricht zusammen, DNS-Server sind nicht mehr erreichbar. Mobilfunkmasten laufen auf Notstrom-Batterien.
-  </TimelineEvent>
-  <TimelineEvent title="Stunde 00:05 – Autonomer Systemwechsel" time="Tag 1 - 04:05 Uhr">
+
+*   **Tag 1 - 04:05 Uhr | Stunde 00:05 – Autonomer Systemwechsel**
     Die Go-Hintergrunddienste der 10 SnowFoxOS-Knoten registrieren den dauerhaften Verlust des Internet-Gateways. Das OS reagiert vollautomatisch: **Weg 1 (WLAN)** wechselt in den offenen Captive-Portal-Modus (*„FoxNet“*). Die RNode-Modems für **Weg 2 & 3 (LoRa)** werden initialisiert.
-  </TimelineEvent>
-  <TimelineEvent title="Stunde 00:30 – Das Sterben der Masten" time="Tag 1 - 04:30 Uhr">
+
+*   **Tag 1 - 04:30 Uhr | Stunde 00:30 – Das Sterben der Masten**
     Die Pufferbatterien der regulären Mobilfunkmasten sterben. Das offizielle Netz ist komplett tot. Smartphones der Bürger scannen panisch nach Signalen und buchen sich automatisch in das starke, lokale WLAN der SnowFoxOS-Knoten ein. Erste Informationswelle rollt über das lokale Wiki.
-  </TimelineEvent>
-  <TimelineEvent title="Stunde 12:00 – Elektronische Kampfführung" time="Tag 1 - 16:00 Uhr">
+
+*   **Tag 1 - 16:00 Uhr | Stunde 12:00 – Elektronische Kampfführung**
     Der Feind setzt breitbandige Störsender (Jammer) ein, um den staatlichen Digitalfunk (TETRA) und Satelliten-Uplinks zu blockieren. Auch das militärisch sensible **868-MHz-Band (Weg 3)** meldet plötzlich eine extreme Fehlerrate (Noise Floor steigt massiv).
-  </TimelineEvent>
-  <TimelineEvent title="Stunde 12:05 – Der manuelle Frequenz-Hebel" time="Tag 1 - 16:05 Uhr">
+
+*   **Tag 1 - 16:05 Uhr | Stunde 12:05 – Der manuelle Frequenz-Hebel**
     Die Admins der Knoten reagieren auf das Jamming. Über das Web-Interface wird der physische Hebel umgelegt: **Weg 3 (868 MHz) wird deaktiviert, Weg 2 (LoRa 2,4 GHz) wird scharfgeschaltet.** Das Mesh taucht im dichten Frequenzmüll des städtischen 2,4-GHz-Bandes (Bluetooth, Mikrowellen, tote WLANs) unter und funkt trotz Störung weiter.
-  </TimelineEvent>
-  <TimelineEvent title="Stunde 36:00 – Ressourcen-Knappheit" time="Tag 2 - 16:00 Uhr">
+
+*   **Tag 2 - 16:00 Uhr | Stunde 36:00 – Ressourcen-Knappheit**
     Die Akkus der privaten Knoten sinken unter 20%. Das **5-Prioritäten-System** greift radikal. Alle privaten Chats (P2/P3) und Datentransfers (P1) werden netzweid blockiert. Die verbleibende Energie wird exklusiv für militärische/behördliche Notrufe und System-Routing (P4/P5) reserviert.
-  </TimelineEvent>
-  <TimelineEvent title="Stunde 72:00 – Dezentraler Sieg" time="Tag 4 - 04:00 Uhr">
+
+*   **Tag 4 - 04:00 Uhr | Stunde 72:00 – Dezentraler Sieg**
     Die Stadt ist physisch isoliert, aber informationstechnisch intakt. Die Einsatzkräfte im Rathaus koordinieren über die krypto-isolierten Reticulum-Kanäle die Verteilung von Brunnenwasser und sichern die medizinische Notversorgung der 10.000 Bürger, während der Feind die Stadt für kommunikativ blind hält.
-  </TimelineEvent>
-</Timeline>
 
 ---
 

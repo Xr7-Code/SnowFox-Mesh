@@ -1,46 +1,56 @@
 # 🦊 SnowFox Mesh
 
-SnowFox Mesh ist ein dezentrales, autarkes Kommunikationsprotokoll, das darauf ausgelegt ist, die Netzwerkresilienz in Szenarien mit eingeschränkter oder fehlender zentraler Infrastruktur (z. B. Ausfall von ISP-Gateways oder öffentlicher Stromversorgung) zu erhöhen.
+SnowFox Mesh ist ein dezentrales, autarkes Kommunikationsprotokoll. Ich entwickle dieses System als Antwort auf die zunehmende Fragilität zentralisierter Infrastrukturen. Das Ziel ist die Schaffung eines Netzwerks, das auch dann funktioniert, wenn staatliche oder kommerzielle Systeme (ISP-Gateways, Stromnetz) ausfallen.
+
+## 📋 Motivation & Philosophie
+Ich arbeite alleine an diesem Projekt, um maximale Unabhängigkeit zu wahren. Ich bin nicht an Firmeninteressen oder regulatorische Vorgaben gebunden, was mir erlaubt, die Stabilität und Sicherheit der Bevölkerung als höchste Priorität zu definieren.
+
+*   **Autonomie:** Ich lehne die Abhängigkeit von zentralen „Single Points of Failure“ ab.
+*   **Reaktion auf Infrastruktur-Schwächen:** Ich sehe eine Fehlentwicklung in der aktuellen Priorisierung von Ressourcen. Mein Fokus liegt auf einer funktionalen, krisenfesten Basis-Infrastruktur.
+*   **Umgang mit Restriktionen:** Ich bin mir bewusst, dass ein solches Tool auf Widerstand stoßen könnte. Ein kritischer Diskurs über digitale Souveränität ist ein inhärenter Teil dieses Projekts. Mein Ziel ist nicht die Konfrontation, sondern die Schaffung einer technischen Alternative, die im Ernstfall die Kommunikation sichert.
 
 ## 🛠 Technische Spezifikation
 
 ### Architektur-Konzept
-SnowFox Mesh nutzt ein Peer-to-Peer-Routing, um Nachrichten über mehrere Hops zu relayen. Der Fokus liegt auf der Minimierung der Abhängigkeit von zentralen Knoten.
+SnowFox Mesh nutzt ein Peer-to-Peer-Routing, um Nachrichten über mehrere Hops zu relayen. 
 
-*   **Routing-Konzept:** Implementierung von [BATMAN / OLSR-basierten] Ansätzen zur dynamischen Pfadfindung.
+*   **Routing-Konzept:** Ich implementiere [BATMAN / OLSR-basierte] Ansätze zur dynamischen Pfadfindung.
 *   **Peer Discovery:** Mechanismen zur automatischen Erkennung benachbarter Knoten im Funkbereich.
 *   **NAT-Traversal:** Strategien zur Überwindung von Netzwerk-Restriktionen zwischen Endpunkten.
-*   **Gateway-Konzept:** Dedizierte Knoten fungieren als Übergangspunkte, jedoch ist das Protokoll darauf ausgelegt, auch im rein lokalen Mesh (Node-to-Node) zu funktionieren.
+*   **Gateway-Konzept:** Dedizierte Knoten fungieren als Übergangspunkte, das Protokoll ist jedoch darauf ausgelegt, auch in isolierten lokalen Meshes (Node-to-Node) zu kommunizieren.
 
-### Kryptographie & Security
-Mein Ziel ist es, die Hürden für unautorisierte Datenanalyse durch Verschlüsselung und Protokoll-Obfuskation signifikant zu erhöhen.
+### Kryptographie & Sicherheit
+Ich verfolge den Ansatz, die Hürden für unautorisierte Datenanalyse durch Verschlüsselung und Protokoll-Obfuskation signifikant zu erschweren.
 
-*   **Ende-zu-Ende-Verschlüsselung:** Einsatz von [X25519 / Ed25519 / Noise Protocol Framework] zur Absicherung der Payloads.
-*   **Datenschutz-Fokus:** Während E2E-Verschlüsselung den Inhalt schützt, bin ich mir bewusst, dass Metadaten (Verkehrsmuster, Frequenzanalyse) systembedingt sichtbar bleiben.
-*   **Bedrohungsmodell:** Das System zielt darauf ab, passive Beobachtung und einfache Inhaltsanalyse durch Verschlüsselung und Obfuskation der Paketstruktur zu erschweren, erhebt aber keinen Anspruch auf absolute Anonymität oder Unknackbarkeit gegenüber hochspezialisierten Akteuren.
+*   **E2E-Verschlüsselung:** Einsatz von [X25519 / Ed25519 / Noise Protocol Framework] zur Absicherung der Payloads.
+*   **Sicherheitsmodell:** Ich erkenne an, dass E2E-Verschlüsselung zwar Inhalte schützt, Metadaten (Verkehrsmuster, Signalquellen) jedoch durch physische Messungen oder Traffic-Analyse prinzipiell untersuchbar bleiben.
+*   **Abgrenzung:** Das System zielt darauf ab, passive Beobachtung und einfache Inhaltsanalyse zu verhindern. Ich erhebe keinen Anspruch auf Unknackbarkeit gegenüber hochspezialisierten Akteuren, sondern arbeite kontinuierlich daran, den Aufwand für potenzielle Angreifer so hoch wie möglich zu schrauben.
 
-## 📊 Status & Roadmap
+## 📊 Vergleich: Behörden vs. SnowFox Mesh
 
-| Modul | Status | Zielsetzung |
+| Merkmal | Behördliche Systeme | SnowFox Mesh |
 | :--- | :--- | :--- |
-| Routing | In Entwicklung | Stabile Pfadfindung unter hoher Knotendichte |
-| Verschlüsselung | Design-Phase | Integration von [Noise Protocol] |
-| Web-Interface | Funktional (Basis) | Vereinfachte User-Interaktion |
-| Performance | Optimierung | Reduktion von Latenz durch Go-Migration |
+| **Infrastruktur** | Zentral (SPOF-anfällig) | Dezentral (Resilient) |
+| **Abhängigkeit** | Strom, Internet, Provider | Keine (Autark) |
+| **Priorisierung** | Politisch / Administrativ | Algorithmen (Notruf = Prio 1) |
+| **Einsatzbarkeit** | Bürokratisch gebunden | Sofort / Jederzeit |
+| **Zielvorgabe** | "Minimaler Standard" | Maximale Stabilität |
+| **Kontrolle** | Staat / Konzern | Unabhängig (Open Source) |
 
-## 💡 Entwicklungsgrundsätze
+## 🛠 Status & Roadmap
 
-*   **Resilienz-Fokus:** Ich arbeite an einem System, das bei Ausfall zentraler Komponenten die Kommunikation aufrecht erhält.
-*   **Transparenz:** Ich verzichte auf absolute Sicherheitsversprechen. IT-Sicherheit ist ein fortlaufender Prozess. Ich dokumentiere bekannte Schwachstellen und arbeite an deren Minimierung.
-*   **Konstruktive Offenheit:** Ich bin an einem fachlichen Diskurs interessiert. Feedback zur Protokoll-Architektur, zu Routing-Algorithmen oder zur Kryptographie ist ausdrücklich erwünscht, um die Robustheit des Systems zu steigern.
+*   **Aktueller Status:** Das Fundament steht. Das System ist in der frühen Entwicklungsphase und noch nicht für den produktiven Notfalleinsatz geeignet. 
+*   **Performance:** Ich migriere derzeit von Python-Subprozessen auf eine hochperformante Go-Implementierung, um die Latenz bei hoher Knotendichte zu senken.
+*   **Last-Management:** Ein Beispiel für die adaptive Logik: Erkennt ein Knoten eine Verbindungsqualität von < 25%, priorisiert er automatisch ausschließlich "Critical"-Payloads und drosselt den Overhead.
 
-## 📝 Hinweise zur Mitwirkung
-Dieses Projekt befindet sich in einem frühen Entwicklungsstadium. Ich lade Entwickler ein, sich an der technischen Ausarbeitung zu beteiligen. 
-*   **Architektur:** Ich plane die Ergänzung von Diagrammen zur Visualisierung des Paketflusses.
-*   **Protokolle:** Die Spezifikation des Paketformats ist in Arbeit und wird im Repository unter `/docs` veröffentlicht.
+## 📝 Entwicklungsgrundsätze & Mitwirkung
+Dieses Projekt ist ein fortlaufender Lern- und Entwicklungsprozess. Ich strebe keine absolute Sicherheit an, da IT-Systeme niemals perfekt sind, sondern arbeite an einer stetigen Reduktion der Angriffsfläche.
+
+*   **Transparenz:** Ich lade fachlich versierte Entwickler ein, die Architektur zu hinterfragen und zur Robustheit beizutragen.
+*   **Diskurs:** Feedback zu Routing-Algorithmen, Protokoll-Design und Kryptographie ist ausdrücklich erwünscht.
 
 ---
-*Disclaimer: SnowFox Mesh ist ein experimentelles Open-Source-Projekt. Die Nutzung unterliegt keinerlei Garantien hinsichtlich Verfügbarkeit oder Sicherheit.*
+*Disclaimer: SnowFox Mesh ist ein experimentelles Open-Source-Projekt. Die Nutzung erfolgt auf eigene Gefahr. Es werden keinerlei Garantien hinsichtlich Verfügbarkeit oder Sicherheit gegeben.*
 
 Dokument erstellt: 2026-07-03
-Version: 0.4 (Alpha/Entwicklung)
+Version: 0.5 (Alpha/Entwicklung)

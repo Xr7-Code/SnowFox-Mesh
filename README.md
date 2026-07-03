@@ -1,16 +1,16 @@
 # 🦊 SnowFox Mesh: Architektur für eine autonome Krisenkommunikation
 
 ## 📋 Mission Statement
-SnowFox Mesh ist ein dezentrales, autarkes Kommunikationsnetzwerk, das als unmittelbare Antwort auf die wachsende Fragilität zentralisierter Infrastrukturen entwickelt wurde. In einer Welt, in der moderne Kommunikationssysteme – seien es staatliche Warnsysteme oder kommerzielle Netze – zunehmend von instabilen Versorgungsnetzen (Strom, Internet) und bürokratischer Lähmung abhängig sind, bietet SnowFox Mesh eine technologische Alternative. Hier steht der Schutz der Bevölkerung und die garantierte Erreichbarkeit an absolut erster Stelle.
+Ich entwickle SnowFox Mesh als ein dezentrales, autarkes Kommunikationsnetzwerk, das als meine direkte Antwort auf die wachsende Fragilität zentralisierter Infrastrukturen dient. In einer Welt, in der moderne Kommunikationssysteme – seien es staatliche Warnsysteme oder kommerzielle Netze – zunehmend von instabilen Versorgungsnetzen wie Strom und Internet abhängen, biete ich eine technologische Alternative an. Bei meinem Projekt steht der Schutz der Bevölkerung und die garantierte Erreichbarkeit an absolut erster Stelle. Ich lasse mich dabei nicht von Konzerngewinnen oder bürokratischen Hürden leiten.
 
-## ⚠️ Die Problematik: Warum offizielle Systeme scheitern
+## ⚠️ Die Problematik: Warum offizielle Systeme versagen
 
-Aktuelle behördliche Warn- und Kommunikationssysteme in Deutschland und anderen Teilen der Welt leiden unter strukturellen Defiziten, die im Ernstfall zu einer Sicherheitslücke führen:
+Aktuelle behördliche Warn- und Kommunikationssysteme leiden unter strukturellen Defiziten, die im Ernstfall zu einer lebensgefährlichen Sicherheitslücke führen:
 
-*   **Zentralisierung als Schwachstelle:** Bestehende Systeme basieren auf zentralen Funkmasten und Rechenzentren, die bei großflächigen Krisen (Stromausfall, Cyberattacken, physische Zerstörung) zum Ausfall führen[cite: 1].
-*   **Mentalität des "Minimalismus":** Politisch und administrativ wird oft das Ziel verfolgt: *"Das Nötigste ist genug"*. Wenn jedoch Menschenleben auf dem Spiel stehen, darf diese Mentalität nicht existieren. SnowFox Mesh strebt 100 % Zuverlässigkeit an, da bei Leben und Tod keine Kompromisse akzeptiert werden[cite: 1].
-*   **Fehlpriorisierung ökonomischer Mittel:** Öffentliche Budgets fließen oft in die Interessen großer Konzerne oder Rüstungsprojekte, während die Basis-Infrastruktur zur Resilienz der eigenen Bevölkerung vernachlässigt wird[cite: 1].
-*   **Bürokratische Blockaden:** Komplexe gesetzliche und regulatorische Rahmenbedingungen verhindern oft schnelle, effiziente Lösungen. Die Sicherheit wird durch Umständlichkeit gefährdet (z. B. regulatorische Hürden, die im Notfall irrelevant sind)[cite: 1].
+*   **Zentralisierung als Schwachstelle:** Bestehende Systeme basieren fast ausschließlich auf zentralen Funkmasten und Rechenzentren. Wenn diese bei einem großflächigen Blackout, einer Cyberattacke oder physischer Zerstörung ausfallen, bricht die gesamte Kommunikation zusammen.
+*   **Die Mentalität des "Minimalismus":** Politisch und administrativ wird oft das Ziel verfolgt: „Das Nötigste ist genug“. Ich halte das für einen fatalen Fehler. Wenn Menschenleben auf dem Spiel stehen, ist ein System, das zu 90 % funktioniert, im entscheidenden Moment immer noch ein Totalausfall. Ich strebe 100 % Zuverlässigkeit an, da bei Leben und Tod keine Kompromisse akzeptiert werden können.
+*   **Fehlpriorisierung ökonomischer Mittel:** Ich beobachte, wie öffentliche Budgets in die Interessen großer Konzerne oder Rüstungsprojekte fließen, während die Basis-Infrastruktur zur Resilienz der Bevölkerung vernachlässigt wird.
+*   **Bürokratische Blockaden:** Komplexe gesetzliche Rahmenbedingungen verhindern oft schnelle, effiziente Lösungen. Die Sicherheit wird durch Umständlichkeit gefährdet, da regulatorische Hürden im Notfall schlicht irrelevant sind.
 
 ## 📊 Vergleich: Behörden vs. SnowFox Mesh
 
@@ -18,33 +18,33 @@ Aktuelle behördliche Warn- und Kommunikationssysteme in Deutschland und anderen
 | :--- | :--- | :--- |
 | **Infrastruktur** | Zentral (SPOF-anfällig) | Dezentral (Resilient) |
 | **Abhängigkeit** | Strom, Internet, Provider | Keine (Autark) |
-| **Priorisierung** | Administrativ / Politisch | Algorithmen (Notruf = Prio 1) |
+| **Priorisierung** | Politisch / Administrativ | Algorithmen (Notruf = Prio 1) |
 | **Einsatzbarkeit** | Bürokratisch gebunden | Sofort / Jederzeit |
 | **Zielvorgabe** | "Das Nötigste reicht" | 100% Funktionalität |
 | **Kontrolle** | Staat / Konzern | Unabhängig (Open Source) |
 
-## 💡 Der SnowFox-Ansatz: Freiheit & Autonomie
+## 💡 Mein Ansatz: Freiheit & Autonomie
 
-SnowFox Mesh ist ein technologischer Gegenentwurf. Wir sind nicht an Firmeninteressen, staatliche Vorgaben oder restriktive regulatorische Regelungen gebunden, die den Schutz der Bürger behindern könnten.
+SnowFox Mesh ist mein technologischer Gegenentwurf. Da ich alleine an diesem Projekt arbeite, bin ich niemandem verpflichtet außer der Funktionalität selbst. Ich unterliege keinen Firmeninteressen, staatlichen Vorgaben oder restriktiven Regelungen.
 
-*   **Technologische Unabhängigkeit:** Das System benötigt keine speziellen Lizenzen oder Hardware-Freigaben. Jeder Knoten im Netzwerk ist gleichberechtigt[cite: 1].
-*   **Plattform-Unabhängigkeit:** Durch das browserbasierte Web-Interface können Nutzer mit jedem internetfähigen Gerät (Apple, Google, Samsung etc.) ohne App-Installation Teil des Mesh-Netzwerks werden[cite: 1].
-*   **Intelligentes Last-Management:** Bei schwacher Signalqualität (Regulierung bei < 50% / < 25%) schaltet das System automatisch in einen "Notfall-Modus". Kritische Notrufe werden priorisiert durchgestellt, während unwichtiger Datenverkehr gedrosselt wird, um das Mesh stabil zu halten[cite: 1].
-*   **Absolute Freiheit:** Da das System kein kommerzielles Produkt ist, unterliegt es keinem Profit-Druck. Die Regeln bestimmen sich ausschließlich durch die Notwendigkeit der Funktionsfähigkeit[cite: 1].
+*   **Technologische Unabhängigkeit:** Mein System benötigt keine speziellen Lizenzen. Jeder Knoten im Netzwerk ist gleichberechtigt und kann das Signal weiterleiten.
+*   **Plattform-Unabhängigkeit:** Ich habe ein browserbasiertes Web-Interface entworfen, damit Nutzer mit jedem internetfähigen Gerät (Apple, Google, Samsung etc.) ohne App-Installation Teil des Mesh-Netzwerks werden können.
+*   **Intelligentes Last-Management:** Ein praktisches Beispiel: Wenn ein Gerät erkennt, dass die Verbindung durch eine massive Betonwand auf unter 25 % Signalstärke fällt, schaltet es automatisch in den "Notfall-Modus". Es ignoriert dann alle unwichtigen Datenanfragen und reserviert die gesamte Bandbreite für kritische Notrufe.
+*   **Absolute Freiheit:** Da es sich um mein privates Projekt handelt, unterliegt es keinem Profit-Druck. Die Regeln bestimmen sich ausschließlich durch die technische Notwendigkeit.
 
 ## 🛠 Status & Roadmap (Development Status)
 
-SnowFox Mesh befindet sich derzeit in der aktiven Entwicklungsphase. Es ist ein komplexes Unterfangen, ein solches System von Grund auf zu entwickeln.
+SnowFox Mesh befindet sich in einer frühen, aktiven Entwicklungsphase. Ich arbeite hart daran, dieses komplexe System von Grund auf zu skalieren.
 
-*   **Aktueller Status:** Das Fundament ist gelegt, aber das System ist **noch nicht zu 100 % einsatzbereit**. Viele Komponenten befinden sich in einem frühen Stadium oder werden derzeit konzeptionell überarbeitet.
-*   **Technische Schwerpunkte:**
-    *   **Mehr-Hop-Routing:** Implementierung von OLSR/BATMAN zur Flächendeckung[cite: 1].
-    *   **Selbstheilung:** Entwicklung von Watchdogs und Health-Checks zur automatischen Fehlerbehebung bei Abstürzen[cite: 1].
-    *   **Performance:** Übergang von Python-Subprozessen auf eine hochperformante Go-Implementierung, um Latenzzeiten massiv zu senken[cite: 1].
-*   **Qualitätsanspruch:** Die Entwicklung folgt der Roadmap aus `SnowFox-Net.md`. Erst wenn alle Funktionen unter realen Bedingungen validiert wurden, wird das System als vollwertige Alternative betrachtet[cite: 1].
+*   **Aktueller Status:** Das Fundament ist gelegt, aber das System ist **noch nicht zu 100 % einsatzbereit**. Viele Komponenten befinden sich in einem frühen Stadium und werden stetig überarbeitet.
+*   **Technische Schwerpunkte, an denen ich arbeite:**
+    *   **Mehr-Hop-Routing:** Ich implementiere Protokolle wie OLSR oder BATMAN, um eine echte Flächendeckung zu erreichen.
+    *   **Selbstheilung:** Ich entwickle Watchdogs und Health-Checks, die bei einem Absturz das System automatisch neustarten, ohne dass ein Nutzer eingreifen muss.
+    *   **Performance:** Ich stelle das System von Python-Subprozessen auf eine hochperformante Go-Implementierung um, um die Latenz massiv zu senken.
+*   **Qualitätsanspruch:** Ich folge einer strikten Roadmap. Erst wenn alle Funktionen unter realen Bedingungen validiert wurden, werde ich das System als vollwertige Alternative betrachten.
 
-*Hinweis: SnowFox Mesh ist ein Open-Source-Projekt. Die Nutzung und Weiterentwicklung dient ausschließlich der technologischen Resilienz und dem Schutz der Bevölkerung in Krisenzeiten. Da sich das System in einer frühen Entwicklungsphase befindet, sind kontinuierliche Tests und Code-Optimierungen für den angestrebten 100%-Standard notwendig.*
+*Hinweis: SnowFox Mesh ist ein Open-Source-Projekt. Die Nutzung und Weiterentwicklung dient ausschließlich der technologischen Resilienz und dem Schutz der Bevölkerung in Krisenzeiten. Da sich das System in der Entwicklung befindet, sind kontinuierliche Tests und Code-Optimierungen für den angestrebten 100%-Standard mein tägliches Ziel.*
 
 ---
 Dokument erstellt: 2026-07-03
-Version: 1.0 (Entwicklung)
+Version: 1.1 (Entwicklung)

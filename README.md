@@ -1,35 +1,36 @@
 # 🦊 SnowFox Mesh
 
-SnowFox Mesh ist ein dezentrales, autarkes Kommunikationsprotokoll, das darauf ausgelegt ist, die Netzwerkverfügbarkeit in Szenarien mit eingeschränkter oder fehlender zentraler Infrastruktur zu gewährleisten. Das Projekt dient dem Ziel, die digitale Resilienz zu erhöhen und eine von Internet-Providern unabhängige Kommunikationsinfrastruktur zu schaffen.
+SnowFox Mesh ist ein dezentrales, selbstorganisierendes Kommunikationsprotokoll, das darauf ausgelegt ist, die Netzwerkverfügbarkeit in Szenarien mit eingeschränkter oder fehlender zentraler Infrastruktur zu gewährleisten. Das Projekt verfolgt das Ziel, die digitale Resilienz zu erhöhen und ein Kommunikationsnetzwerk zu schaffen, das **ohne zentrale Server** sowie **unabhängig von zentraler Internet-Infrastruktur** betreibbar ist.
 
 ## 🏗 Architektur
 
 ### Übersicht
-SnowFox Mesh arbeitet auf einer Layer-2/3-Hybrid-Ebene, um eine dynamische Netzwerktopologie ohne zentrale Server zu ermöglichen.
+SnowFox Mesh arbeitet auf einer Layer-2/3-Hybrid-Ebene, um eine dynamische Netzwerktopologie ohne zentrale Instanzen zu ermöglichen.
 
 *   **Transportmedien:** Primär 802.11 (WLAN).
-*   **Protokoll-Stack:** Nutzung von UDP zur Paketübertragung, um den Overhead zu minimieren.
+*   **Protokoll-Stack:** Nutzung von UDP zur Paketübertragung zur Minimierung des Overheads.
 *   **Routing-Verfahren:**
-    *   **Flood-Routing mit TTL:** Zur Sicherstellung der Zustellbarkeit in hochdynamischen Mesh-Umgebungen bei gleichzeitigem Schutz vor unendlichen Schleifen.
+    *   **Flood-Routing mit TTL:** Zur Sicherstellung der Zustellbarkeit in hochdynamischen Mesh-Umgebungen bei gleichzeitigem Schutz vor unendlichen Paketschleifen.
     *   **Sequence Numbers:** Zur Vermeidung von Duplikaten pro Nachricht.
-*   **Peer Discovery:** Automatisches Broadcasting zur Erkennung benachbarter Knoten.
-*   **Frontend:** Browser-basiertes Interface (Web-Proxy). Nutzer verbinden sich mit einem lokalen Access Point; es ist keine dedizierte Anwendung (App) auf den Endgeräten erforderlich.
+*   **Peer Discovery:** Automatisierte Broadcasting-Mechanismen zur Erkennung benachbarter Knoten.
+*   **Frontend:** Browser-basiertes Interface (Web-Proxy). Benutzer verbinden sich mit einem lokalen Access Point eines Knotens; es ist keine dedizierte Anwendung (App) auf den Endgeräten erforderlich.
 
-### Infrastruktur-Anforderungen
-*   **Hardware:** Benötigt werden WLAN-fähige Endgeräte (Router, Einplatinencomputer oder Smartphones).
-*   **Stromversorgung:** Das System ist autark gegenüber ISP-Gateways, benötigt jedoch eine lokale Stromversorgung für die Routing-Knoten.
+### System-Voraussetzungen
+Obwohl das Netzwerk **unabhängig von Internet-Providern** agiert, bleibt die Funktionalität an physische Ressourcen gebunden:
+*   **Hardware:** WLAN-fähige Endgeräte (Router, Einplatinencomputer oder Smartphones).
+*   **Energie:** Lokale Stromversorgung der Routing-Knoten.
 
 ### Sicherheit & Kryptographie
-*   **E2E-Verschlüsselung:** Einsatz des [Noise Protocol Frameworks] für Authentifizierung und Verschlüsselung der Nutzdaten.
-*   **Bedrohungsmodell:** Das Protokoll zielt darauf ab, passive Beobachtung der Inhalte zu verhindern. Metadaten (Verkehrsmuster) sind prinzipbedingt sichtbar, sofern keine zusätzlichen Obfuskations-Layer implementiert werden.
+*   **E2E-Verschlüsselung:** Einsatz des [Noise Protocol Frameworks] für Authentifizierung und Verschlüsselung der Payloads.
+*   **Bedrohungsmodell:** Das Protokoll zielt darauf ab, passive Inhaltsanalysen zu verhindern. Metadaten (Verkehrsmuster) sind prinzipbedingt sichtbar, sofern keine zusätzlichen Obfuskations-Layer implementiert werden. Es wird kein Anspruch auf absolute Anonymität erhoben.
 
 ## 📊 System-Eigenschaften
 
 | Merkmal | Eigenschaft |
 | :--- | :--- |
-| Topologie | Mesh (Peer-to-Peer) |
+| Topologie | Dezentral (Mesh) |
 | Zentraler Server | Nicht erforderlich |
-| Internet-Infrastruktur | Nicht erforderlich |
+| Internet-Infrastruktur | Unabhängig |
 | Open Source | Ja |
 | Offline-Betrieb | Vollständig möglich |
 | Notfall-Priorisierung | Implementiert (Applikations-Ebene) |
@@ -48,4 +49,4 @@ Das Projekt verfolgt einen pragmatischen Ansatz zur technischen Resilienz. Ich l
 *Disclaimer: SnowFox Mesh ist ein experimentelles Open-Source-Projekt. Die Nutzung erfolgt auf eigene Gefahr. IT-Systeme unterliegen stets Risiken; absolute Sicherheit oder Verfügbarkeit können nicht garantiert werden.*
 
 Dokument erstellt: 2026-07-03
-Version: 0.8 (Entwicklung)
+Version: 0.9 (Entwicklung)

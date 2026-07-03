@@ -51,4 +51,4 @@ Dieses Projekt ist ein fortlaufender Lern- und Entwicklungsprozess. Ich strebe k
 *Disclaimer: SnowFox Mesh ist ein experimentelles Open-Source-Projekt. Die Nutzung erfolgt auf eigene Gefahr. Es werden keinerlei Garantien hinsichtlich Verfügbarkeit oder Sicherheit gegeben.*
 
 Dokument erstellt: 2026-07-03
-Version: 0.1 (Alpha/Entwicklung)
+Version: 0.6 (Alpha/Entwicklung)
